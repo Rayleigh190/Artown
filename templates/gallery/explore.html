@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          
+          {% if artwork_list %}
+            {% for artwork in artwork_list %}
+                <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="{% url 'gallery:detail' artwork.id %}" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>{{ artwork.subject }}</h3>
+                      <!-- <span>{{ artwork.content }}</span> -->
+                    </div>
+                    <img class="img-fluid" src="{{ artwork.image.url }}">
+                  </a>
+                </div>
+            {% endfor %}
+          {% else %}
+            <p>데이터가 없습니다.</p>
+          {% endif %}
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+{% endblock %} 

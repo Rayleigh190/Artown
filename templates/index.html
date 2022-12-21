@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+        <img src="{% static '/img/main_art.png' %}" class="img-fluid animated">
+        <h2 class="mt-2">Welcome to <span>Artown</span></h2>
+        <p>Artown은 누구나 쉽게 어디서든 예술 활동을 즐길수 있는 서비스 입니다. 여러분들의 무한한 가능성을 열어보세요!</p>
+        <div class="d-flex">
+        <a href="{% url 'common:signup' %}" class="btn-get-started scrollto">Get Started</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %} 
