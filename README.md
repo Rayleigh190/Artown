@@ -1,6 +1,6 @@
-# 2021 - Artown Project
+# 2022 - Artown Project
 
-2022년 2학기 데이터베이스시스템 과목의 기말 프로젝트입니다.
+2022년 1학기 데이터베이스시스템 과목의 기말 프로젝트입니다.
 
 ## Description
 
@@ -32,21 +32,23 @@ Art(예술) + Town(도시, 모임) = Artown : Artist(예술가)들의 모임!
 
 ## Environment
 
-**CSS Framework :** Bootstrap
-**Web Framework :** Django
-**Database sys :** SQLite
+**CSS Framework :** Bootstrap  
+**Web Framework :** Django  
+**Database sys :** SQLite  
 
 ## Prerequisite
 
 **requirements**
-asgiref==3.5.2
-Django==4.0.4
-Pillow==9.1.1
-sqlparse==0.4.2
-tzdata==2022.1
 
-**settings.py > SECRET_KEY**
-아래 링크에서 스크릿키 생성 후 작성
+    asgiref==3.5.2  
+    Django==4.0.4  
+    Pillow==9.1.1  
+    sqlparse==0.4.2  
+    tzdata==2022.1 
+
+
+**settings.py > SECRET_KEY**  
+아래 링크에서 스크릿키 생성 후 작성  
 https://djecrety.ir/
 
 ## User Interface
